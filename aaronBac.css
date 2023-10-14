@@ -73,6 +73,15 @@ nav li {
   
 }
 
+h1{
+  color: black;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+  animation-name: shake;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
 h2{
   color: #d62828;
 }
@@ -106,9 +115,74 @@ h2{
   }
   li { 
     font-size: 1.5em;
+    
   }
 }
 
+/* Dad Jokes */
+
+
+    .wrapper {
+      text-align: center;
+    }
+
+    .joke {
+      font-size: 16px;
+      font-weight: 900;
+    }
+
+    .getJoke{
+        background-color: green;
+        height: 50px;
+        width: 100px;
+        border-radius: 5px;
+    }
+
+    .lds-ripple {
+      display: inline-block;
+      position: relative;
+
+      width: var(--size);
+      height: var(--size);
+    }
+
+    .lds-ripple div {
+      position: absolute;
+      border: 4px solid white;
+      opacity: 1;
+      border-radius: 50%;
+      animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+    }
+
+    .lds-ripple div:nth-child(2) {
+      animation-delay: -0.5s;
+    }
+
+    @keyframes lds-ripple {
+      0% {
+        top: calc(var(--size) / 2);
+        left: calc(var(--size) / 2);
+        width: 0;
+        height: 0;
+        opacity: 1;
+      }
+
+      100% {
+        top: 0px;
+        left: 0px;
+        width: calc(var(--size) * 0.9);
+        height: calc(var(--size) * 0.9);
+        opacity: 0;
+      }
+    }
+
+    .hidden {
+      display: none;
+    }
+
+
+
+/*
   #jokes {
    border-bottom: solid;
     
@@ -120,24 +194,39 @@ h2{
    
   }
 
+  */
+
+
+
   /* Changes color for lists */
   li:nth-of-type(1) {
-    color: #f72585;
+    color: #ff006e;
 }
 
 li:nth-of-type(2) {
-    color: #7209b7;
+    color: #8338ec;
 }
 
 li:nth-of-type(3) {
-    color: #3a0ca3;
+    color: #3a86ff;
 }
 
 li:nth-of-type(4) {
-    color: #4361ee;
+    color: #fb5607;
 }
 
-  
+li:nth-of-type(5) {
+  color: #ffbe0b;
+}
+
+li:nth-of-type(6) {
+  color: black;
+}
+
+li:nth-of-type(7) { 
+  color: #606c38;
+}
+
   
   /* Style for the footer */
 footer {
