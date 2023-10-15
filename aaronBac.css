@@ -131,11 +131,21 @@ h2{
       font-weight: 900;
     }
 
+    .joketext {
+      color: white;
+    }
+
     .getJoke{
-        background-color: green;
+        
         height: 50px;
         width: 100px;
         border-radius: 5px;
+        
+    }
+
+    button{
+      background-color: green;
+      color: white;
     }
 
     .lds-ripple {
